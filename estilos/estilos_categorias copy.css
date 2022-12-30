@@ -1,0 +1,381 @@
+@font-face{
+    font-family: "ArchitectsDaughter-Regular";
+    src: url('Fuentes/ArchitectsDaughter-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: "BebasNeue-Regular";
+    src: url('Fuentes/BebasNeue-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: "Orbitron-VariableFont_wght";
+    src: url('Fuentes/Orbitron-VariableFont_wght.ttf') format('truetype');
+}
+@font-face{
+    font-family: "PressStart2P-Regular";
+    src: url('Fuentes/PressStart2P-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: "Raleway-VariableFont_wght";
+    src: url('Fuentes/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+*{margin: 0; padding: 0;}
+.contenido-container
+{
+    width: 100%;
+    overflow: hidden;
+}
+.contenido-inicio img
+{
+    width:100%;
+    height:fit-content;
+    margin-top: -10px;
+    overflow: hidden;
+}
+.info-categorias-container
+{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.descripcion-categorias
+{
+    padding: 15px;
+    border-radius: 20px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: 'Raleway-VariableFont_wght';
+    letter-spacing: 0px;
+    text-align: justify;
+    font-weight: bold;
+}
+.reglas
+{
+    background-color: /*#F0A132*/ #49dee9;
+    color: #fff;
+    padding: 20px 40px;
+    height: 27px;
+    border-radius: 15px;
+    padding-top: 15px;
+    margin-top:50px;   
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin:15px auto;
+    font-weight: bold;
+    font-family: 'Raleway-VariableFont_wght';
+    font-size: 28px;
+    letter-spacing: 4px; 
+}
+
+.btn-reglas{
+    background-color: /*#F0A132*/ #E94957;
+    color: #fff;
+    padding: 20px 40px;
+    height: 27px;
+    border-radius: 15px;
+    padding-top: 15px;
+    margin-top:50px;   
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin:15px auto;
+    font-weight: bold;
+    font-family: 'BebasNeue-Regular';
+    font-size: 28px;
+    letter-spacing: 4px;  
+       
+}
+
+.btn-reglasL{
+    background-color: /*#F0A132*/ #FF06B9;
+    color: #fff;
+    padding: 20px 10px;
+    height: 27px;
+    border-radius: 15px;
+    padding-top: 15px;
+    margin-top:50px;   
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin:15px auto;
+    font-weight: bold;
+    font-family: 'BebasNeue-Regular';
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+
+.btn-reglasE{
+    background-color: /*#F0A132*/ #06E1F7;
+    color: #fff;
+    padding: 20px 10px;
+    height: 27px;
+    border-radius: 15px;
+    padding-top: 15px;
+    margin-top:50px;   
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin:15px auto;
+    font-weight: bold;
+    font-family: 'BebasNeue-Regular';
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+.btn-reglasM{
+   
+    background-color: /*#F0A132*/ #FEE803;
+    color: black;
+    padding: 20px 10px;
+    height: 27px;
+    border-radius: 15px;
+    padding-top: 15px;
+    margin-top:50px;   
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin:15px auto;
+    font-weight: bold;
+    font-family: 'BebasNeue-Regular';
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+.descripcion-reglas-categorias
+{
+    display: grid;
+    grid-template-columns: 100%;
+    border-radius: 15px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.reglas-normas-hover-continer
+{
+    background-color:rgba(37, 37, 37, 0.4);
+    position: fixed;
+    top:50%;
+    Left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height:100vh;
+    display:none;
+
+}
+.reglas-normas-hover
+{
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color:rgba(37, 37, 37, 0.8);
+}
+.reglas-normas-hover li
+{
+    color: #ffffff;
+    font-family: 'Raleway-VariableFont_wght' ;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 5px;
+    font-size: 18;
+}
+
+
+.reglas-normas-hover p
+{
+    color:#ffffff;
+    text-align:center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 40px;
+    width: min-content;
+    background-color:rgba(39, 121, 39, 0.9);
+    margin: 0 auto;
+    font-family: 'Raleway-VariableFont_wght' ;
+}
+.inscripciones-no-disponibles
+{
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: min-content;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color:rgba(37, 37, 37, 0.8);
+}
+.inscripciones-no-disponibles p
+{
+    color:#ffffff;
+    text-align:center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 40px;
+    width: 300px;
+    background-color:rgba(39, 121, 39, 0.9);
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: 'Raleway-VariableFont_wght' ;
+}
+.cerrar-reglas-normas
+{
+    width: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 45%;
+}
+.cerrar-inscribere
+{
+    width: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.inscripciones
+{
+    margin-top: 20px;
+}
+.inscripciones-text
+{
+    background: /*#F0A132*/ /*#ffa43a*/ #76F706;
+    border-radius: 15px;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    font-family: 'BebasNeue-Regular';
+    font-size: 30px;
+    letter-spacing: 4px;    
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 20px 10px;
+    height: 40px;
+    padding-top: 25px;
+    text-align: center;
+}
+.inscripciones-text:hover
+{
+    cursor: pointer;
+}
+.reglas-normas
+{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-width: 250px;
+}
+.inscripciones-aviso
+{
+    background-color:rgba(37, 37, 37, 0.4);
+    position: fixed;
+    top:50%;
+    Left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height:100vh;
+    display: none;
+}
+.inscripciones-aviso-box
+{
+    width: 50%;
+    background-color:rgba(37, 37, 37, 0.7);
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 50px;
+    font-family: 'Orbitron-VariableFont_wght' ;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18;
+    padding: 25px;
+}
+.cerrar-inscribete
+{
+    top: 0px;
+    width: 25px;
+    margin-left: 90%;
+}
+.cerrar-inscribete:hover
+{
+    cursor: pointer;
+}
+#inscripciones-container
+{
+    background-image: url("https://menorcainformatica.com/wp-content/uploads/2020/04/keyboard-gaming-moody-gamer-3165335.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:50%;
+    Left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height:100%;
+    display: none;
+}
+.inscripciones-container-form
+{
+    margin-top: 50px;
+    padding-top: 50px;
+    width: 50%;
+    background-color:#76F706;
+    margin: 0 auto;
+}
+@media (max-width: 1180px){
+    .reglas-normas
+    {
+        width: 70%;
+
+        grid-template-columns: 100%;
+        min-width: 300px;
+    }
+    .info-categorias-container
+    {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .descripcion-categorias
+    {
+        padding: 10px;
+
+        font-size: 20px;
+        font-family: 'Raleway-VariableFont_wght';
+        letter-spacing: 1px;
+        text-align: justify;
+        font-weight: bold;
+    }
+
+}
+@media (max-width: 900px) {
+    .nav-container
+    {
+        padding-top: 20px;
+    }
+    .nav-cato
+    {
+        padding: 0px;
+    }
+}
+@media (max-width: 900px) {
+    .contenido-inicio{    overflow: hidden;
+    }
+    .contenido-inicio img
+    {
+        width:auto;
+        height: 100vh;
+        margin-top: 40px;
+        margin-left: -25%;
+        overflow: hidden;
+    }
+    .contenido-container
+    {
+        overflow: hidden;
+
+    }
+}
+@media (max-width: 800px){.contenido-inicio img{margin-left: -40%;}}
+@media (max-width: 700px){.contenido-inicio img{margin-left: -50%;}}
+@media (max-width: 600px){.contenido-inicio img{margin-left: -60%;}}
+@media (max-width: 500px){.contenido-inicio img{margin-left: -70%;}}
+@media (max-width: 400px){.contenido-inicio img{margin-left: -100%;}}

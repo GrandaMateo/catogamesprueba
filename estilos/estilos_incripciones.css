@@ -1,0 +1,183 @@
+@font-face{
+    font-family: "ArchitectsDaughter-Regular";
+    src: url('Fuentes/ArchitectsDaughter-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: "BebasNeue-Regular";
+    src: url('Fuentes/BebasNeue-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: "Orbitron-VariableFont_wght";
+    src: url('Fuentes/Orbitron-VariableFont_wght.ttf') format('truetype');
+}
+@font-face{
+    font-family: "PressStart2P-Regular";
+    src: url('Fuentes/PressStart2P-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: "Raleway-VariableFont_wght";
+    src: url('Fuentes/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+*
+{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url("https://menorcainformatica.com/wp-content/uploads/2020/04/keyboard-gaming-moody-gamer-3165335.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+#inscripciones-container
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.inscripciones-container-form
+{
+    padding-top: 50px;
+    width: fit-content;
+    min-width: 650px;
+    background-color:rgba(95, 73, 107, 0.8);
+    margin: 0 auto;
+}
+.inscripciones-form
+{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+.inscripciones-form-title-superior
+{
+    font-family:'BebasNeue-Regular';
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    color: #76F706 ;
+}
+.inscripciones-form-title-jugador
+{
+    font-family:'BebasNeue-Regular';
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    color: /*rgb(203, 209, 201);*/rgb(9, 179, 170);
+}
+.form-item-simple
+{
+
+}
+.form-btns
+{
+    background-color: /*rgb(221, 152, 23)*/ rgb(198, 37, 212);
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px 20px;
+    margin: 10px 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+.form-item-doble
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width:80%
+}
+.form-btns-container
+{
+    width:fit-content;
+    margin: 0 auto;
+    display: inline-block;
+}
+.form-item
+{
+    padding: 10px;
+    margin: 0 auto;
+    
+}
+.form-title
+{
+    font-family:'Raleway-VariableFont_wght';
+    padding-bottom: 5px;
+    padding-left: 15px;
+    color: aliceblue;
+}
+.form-input
+{
+
+    background-color: rgb(168, 133, 66);
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    width: 90%;
+}
+#cerrar-form-container
+{
+    width: 30px;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: -30px;
+}
+.inscripciones-form-btns
+{
+    display: flex;
+}
+.form-input-checkbox
+{
+    color: #76F706;
+}
+#inscripciones-form-step-2{display: none;}
+#inscripciones-form-step-3{display: none;}
+#inscripciones-form-step-4{display: none;}
+#inscripciones-form-step-5{display: none;}
+
+@media (max-width: 700px)
+{
+    .form-item-simple
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width:90%
+    }
+    .form-item-doble
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width:90%
+    }
+    .inscripciones-container-form
+    {
+        padding-top: 25px;
+        width: fit-content;
+        min-width: 100%;
+    }
+    #inscripciones-container
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .form-btns
+    {
+        background-color: rgb(221, 152, 23);
+        border: none;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        padding: 20px 20px;
+        margin: 10px 10px;
+        width: 130px;
+        border-radius: 5px;
+    }
+    #cerrar-form-container
+    {
+        width: 25px;
+        position: absolute;
+        margin-left: 40px;
+        margin-top: -18px;
+    }
+}

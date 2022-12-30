@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cato Games</title>
+    <link rel="stylesheet" href="estilos/estilos_principal.css">
+    <link rel="shortcut icon" href="imagenes/Iconos/Icono cato games.ico">
+    <link rel="shortcut icon" href="../imagenes/Iconos/Icono cato games.ico">
+</head>
+<body>
+    <!--PRELOADER -->
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+        <p class="cato">CATO GAMES 
+            <br style="text-align: center;"> 2023
+        </p>
+   </div>
+    <!--PRELOADER-->
+    <!--BARRA MENU-->
+    <!--BARRA MENU NORMAL-->
+    <div class="nav-container" id="menu-container-normal">
+        <div class="nav-item nav-item-img">
+            <a href="#" target="_blank">
+            <img src="imagenes/Iconos/Logo Cato.png" id="logo-normal">
+            <img src="imagenes/Iconos/Logo Cato Moviles.png" id="logo-recordado">
+        </a>
+        </div>
+        <div class="nav-item nav-item-links" id="nav-item-links">
+            <div class="nav-item-externo nav-item-externo-disable">
+                <p class="nav-item-interno item-interno-hover">CatoGames</p>
+            </div>
+            <div class="nav-item-externo">
+                <a href="categorias/Shooter.html">
+                    <p class="nav-item-interno item-interno-hover">Shooter</p>
+                </a>
+            </div>
+            <div class="nav-item-externo">
+                <a href="categorias/Lucha.html">
+                    <p class="nav-item-interno item-interno-hover">Lucha</p>
+                </a>
+            </div>
+            <div class="nav-item-externo">
+                <a href="categorias/Movil.html">
+                    <p class="nav-item-interno item-interno-hover">Movil</p>
+                </a>
+            </div>
+            <div class="nav-item-externo">
+                <a href="categorias/Estrategia.html">
+                    <p class="nav-item-interno item-interno-hover">Estrategia</p>
+                </a>
+            </div>
+        </div>
+        <div class="">
+            <p class="nav-item-interno-movil">Cato games</p>
+        </div>
+    </div>
+    <div class="nav-btn">
+        <img id="abrir-nav" onclick="abrir_menu()" src="imagenes/Iconos/menu.png" alt="">
+    </div>
+    <!--BARRA MENU MOVIL-->
+    <div class="nav-container-movil" id="menu-container-movil">
+        <div class="nav-container-movil-todo">
+            <div class="nav-item-img-movil">
+                <a href="https://www.ucacue.edu.ec/" target="_blank">
+                    <img src="imagenes/Iconos/Logo Cato.png">
+                </a>
+            </div>
+            <div class="item-menu-movil">
+                <p class="nav-cato">Cato Games</p>
+            </div>
+            <div class="item-menu-movil">
+                <a href="categorias/Shooter.html">
+                    <p class="nav-cato">Shooter</p>
+                </a>
+            </div>
+            <div class="item-menu-movil">
+                <a href="categorias/Estrategia.html">
+                    <p class="nav-cato">Estrategia</p>
+                </a>
+            </div>
+            <div class="item-menu-movil">
+                <a href="categorias/Lucha.html">
+                    <p class="nav-cato">Lucha</p>
+                </a>
+            </div>
+            <div class="item-menu-movil">
+                <a href="categorias/Movil.html">
+                    <p class="nav-cato">Movil</p>
+                </a>
+            </div>
+        </div>    
+        <div class="nav-btn-m">
+            <img id="cerrar-nav" onclick="cerrar_menu()" src="../imagenes/Iconos/cancel.png" alt="">
+        </div>
+    </div>
+    <!--BARRA MENU-->
+    <!--CONTADOR-->
+    <div id="contador">
+        <div id="contador-regresivo" class="flex flex-movil">
+            <div class="flex-item contador-item-margin-10">
+                <p id="days" class="contador-item-margin-5 contador-item-num">132</p>
+                <span class="contador-item-margin-5 contador-item-title">Dias</span>
+            </div>
+            <div class="flex-item contador-item-margin-10">
+                <p id="hours" class="contador-item-margin-5 contador-item-num">15</p>
+                <span class="contador-item-margin-5 contador-item-title">Horas</span>
+            </div>
+            <div class="flex-item contador-item-margin-10">
+                <p id="minutes" class="contador-item-margin-5 contador-item-num">25</p>
+                <span class="contador-item-margin-5 contador-item-title">Minutos</span>
+            </div>
+            <div class="flex-item contador-item-margin-10" >
+                <p id="seconds" class="contador-item-margin-5 contador-item-num">45</p>
+                <span class="contador-item-margin-5 contador-item-title">Segundos</span>
+            </div>
+        </div>
+        <div id="frase" class="flex flex-movil"><img id="img-frase" height="98" src="imagenes/Iconos/Logo verde sin fondo.png" alt=""></div>
+    </div>
+    <!--CONTADOR-->
+    <!--INDICE CATEGORIAS-->
+    <div class="indice-container" id="indice-container">
+        <div class="indice-item-anteriores">
+            <div>
+                <img src="imagenes/Anteriores/catogames_anteriores_4.png" alt="" id="anteriores">
+            </div>
+        </div>
+        <div class="indice-item-categorias">
+            <a href=" categorias/Lucha.html ">
+                <img src="imagenes/Categorias/BRAWLHALLA.png" >
+            </a>
+        </div>
+        <div class="indice-item indice-item-categorias">
+            <a href="categorias/Movil.html">
+                <img src="imagenes/Categorias/COD2.png" >
+            </a>
+        </div>
+        <div class="indice-item indice-item-categorias">
+            <a href="/categorias/Estrategia.html">
+                <img src="imagenes/Categorias/LOL.png" >
+            </a>
+        </div>
+        <div class="indice-item indice-item-categorias">
+            <a href=" categorias/Shooter.html ">
+            <img src="imagenes/Categorias/valorant.png" >
+            </a>
+        </div>
+    </div>
+    <!--INDICE CATEGORIAS-->
+    <!--INDICE CATEGORIAS MOVIL-->
+    <div class="indice-container-movil" id="indice-container">
+        <div class="indice-item-anteriores-movil" >
+            <div>
+                <img src="imagenes/Anteriores/catogames_anteriores_4.png" id="anteriores-movil">
+            </div>
+        </div>
+        <div class="indice-item-categorias-movil-container">
+            <div class="indice-item-categorias-movil">
+                <a href=" categorias/Lucha.html ">
+                    <img src="imagenes/Categorias/BRAWLHALLA.png" >
+                </a>
+            </div>
+            <div class="indice-item-categorias-movil">
+                <a href="categorias/Movil.html">
+                    <img src="imagenes/Categorias/COD2.png" >
+                </a>
+            </div>
+            <div class="indice-item-categorias-movil">
+                <a href="/categorias/Estrategia.html">
+                    <img src="imagenes/Categorias/LOL.png" >
+                </a>
+            </div>
+            <div class="indice-item-categorias-movil">
+                <a href=" categorias/Shooter.html ">
+                <img src="imagenes/Categorias/valorant.png" >
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--INDICE CATEGORIAS-->
+    <!--SECCIÓN #2-->
+    <div class="imagen-container">
+        <img src="imagenes/Iconos/imagen-sección.png" alt="">
+    </div>
+    <!--SECCIÓN #2-->
+    <!--PATROCINIOS-->
+    <div class="patrocinio-containes" id="patrocinio-containes">
+        <div class="patrocinio-titulo">Patrocinadores</div>
+        <div class="patrocinadores-auspiciantes patrocinadores-container">
+            <div class="patrocinadores-zoom patrocinadores-inline" id="patrocinador_1">
+                <img src="imagenes/Patrocinadores/Patrocinador_1.png" alt="">
+                <p class="marca">TECNOSMART</p>
+                <p class="marca-descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, obcaecati, accusantium molestias eveniet at doloremque perferendis, tenetur aperiam doloribus architecto error nulla quae magni vero officiis. Officia, error labore!</p>
+            </div>
+            <div class="patrocinadores-zoom patrocinadores-inline display-none" id="patrocinador_2">
+                <img src="imagenes/Patrocinadores/Patrocinador_2.png" alt="">
+                <p class="marca">Grupo KFC</p>
+                <p class="marca-descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, obcaecati, accusantium molestias eveniet at doloremque perferendis, tenetur aperiam doloribus architecto error nulla quae magni vero officiis. Officia, error labore!</p>
+            </div>
+            <div class="patrocinadores-zoom patrocinadores-inline display-none" id="patrocinador_3">
+                <img src="imagenes/Patrocinadores/Patrocinador_3.png" alt="">
+                <p class="marca">Corporación Favorita</p>
+                <p class="marca-descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, obcaecati, accusantium molestias eveniet at doloremque perferendis, tenetur aperiam doloribus architecto error nulla quae magni vero officiis. Officia, error labore!</p>
+            </div>
+            <div class="patrocinadores-zoom patrocinadores-inline display-none" id="patrocinador_4">
+                <img src="imagenes/Patrocinadores/Patrocinador_4.png" alt="">
+                <p class="marca">Linea A1</p>
+                <p class="marca-descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, obcaecati, accusantium molestias eveniet at doloremque perferendis, tenetur aperiam doloribus architecto error nulla quae magni vero officiis. Officia, error labore!</p>
+            </div>
+            <div class="patrocinadores-zoom patrocinadores-inline display-none" id="patrocinador_5">
+                <img src="imagenes/Patrocinadores/Patrocinador_5.png" alt="">
+                <p class="marca">Etapa</p>
+                <p class="marca-descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, obcaecati, accusantium molestias eveniet at doloremque perferendis, tenetur aperiam doloribus architecto error nulla quae magni vero officiis. Officia, error labore!</p>
+            </div>
+            <div class="patrocinadores-zoom patrocinadores-inline display-none" id="patrocinador_6">
+                <img src="imagenes/Patrocinadores/Patrocinador_6.jpeg" alt="">
+                <p class="marca">Casabaca</p>
+                <p class="marca-descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, obcaecati, accusantium molestias eveniet at doloremque perferendis, tenetur aperiam doloribus architecto error nulla quae magni vero officiis. Officia, error labore!</p>
+            </div>
+            <div class="patrocinadores-zoom patrocinadores-inline display-none" id="patrocinador_7">
+                <img src="imagenes/Patrocinadores/Patrocinador_7.png" alt="">
+                <p class="marca">Mediapro</p>
+                <p class="marca-descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, obcaecati, accusantium molestias eveniet at doloremque perferendis, tenetur aperiam doloribus architecto error nulla quae magni vero officiis. Officia, error labore!</p>
+            </div>
+            <div class="patrocinadores-zoom patrocinadores-inline display-none" id="patrocinador_8">
+                <img src="imagenes/Patrocinadores/Patrocinador_8.png" alt="">
+                <p class="marca">nexsys</p>
+                <p class="marca-descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, obcaecati, accusantium molestias eveniet at doloremque perferendis, tenetur aperiam doloribus architecto error nulla quae magni vero officiis. Officia, error labore!</p>
+            </div>
+<!--
+*********************************************************************************************************
+***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   
+*** ************************************************************************************************* ***
+*** ***       *****       ***                ***************        ********                   ****** ***
+*** ***   **   ***   **   ***   ***************************   ****   ******************     ********* ***
+*** ***   ***   *   ***   ***   **************************   ******   *************     ************* ***
+*** ***   *************   ***   ******        ***********              *********     **************** ***
+*** ***   *************   ***   ********    *****   ****   **********   *****     ******************* ***
+*** ***   *************   ***               *****   ***   ************   ***                   ****** ***
+*** ************************************************************************************************* ***
+***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   *** 
+*********************************************************************************************************
+****DESARROLLADO*POR*MATEO GRANDA*Y*ALEJANDRA*ZEA*:)******15-12-2023*************************************
+*********************************************************************************************************
+
+-->                         
+            <div class="patrocinadores-list">
+                <ul>
+                    <li>
+                        <div class="inline-block">TECNOSMART</div > 
+                        <img class="inline-block"src="imagenes/Patrocinadores/Patrocinador_1.png">
+                        
+                    <li>
+                        <div class="inline-block">Grupo KFC</div > 
+                        <img class="inline-block"src="imagenes/Patrocinadores/Patrocinador_2.png">
+                        
+                    </li>
+                    <li>
+                        <div class="inline-block">Favorita</div > 
+                        <img class="inline-block"src="imagenes/Patrocinadores/Patrocinador_3.png">
+                        
+                    </li>
+                    <li>
+                        <div class="inline-block">Linea A1</div > 
+                        <img class="inline-block"src="imagenes/Patrocinadores/Patrocinador_4.png">
+                        
+                    </li>
+                    <li>
+                        <div class="inline-block">Etapa</div > 
+                        <img class="inline-block"src="imagenes/Patrocinadores/Patrocinador_5.png">
+                        
+                    </li>
+                    <li>
+                        <div class="inline-block">Casabaca</div > 
+                        <img class="inline-block"src="imagenes/Patrocinadores/Patrocinador_6.jpeg">
+                    </li>
+                    <li>
+                        <div class="inline-block">Mediapro</div > 
+                        <img class="inline-block"src="imagenes/Patrocinadores/Patrocinador_7.png">
+                        
+                    </li>
+                    <li>
+                        <div class="inline-block">Nexsys</div > 
+                        <img class="inline-block"src="imagenes/Patrocinadores/Patrocinador_8.png">
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--PATROCINIOS-->
+    <!--FOOTER-->
+        <footer class="footer" id="footer" >
+        <div class="footer-container">
+            <div class="columnas">
+                <ul>
+                    <p>Nuestras redes sociales</p>
+                    <a href="https://www.tiktok.com/@rvv_cato" target="_blank">
+                        <img src="imagenes/Iconos/tiktok_logo.png" width="60px" style="margin-bottom: 5px;">
+                    </a>
+                    
+                    <a href="https://es-la.facebook.com/UCACUEICCIT/" target="_blank">
+                        <img src="imagenes/Iconos/logo definitivo de face.png" >
+                    </a>
+                 
+                </ul>
+                <ul>                        
+                    <p>Correo Electrónico</p> 
+                    <p style="margin-top: 1%;">info_iccit@ucacue.edu.ec</p>
+                </ul>
+                <ul >
+                    <a href="https://es-la.facebook.com/UCACUEICCIT/" target="_blank">
+                        <img src="imagenes/Iconos/logo unidad academica.png" id="logo-unidad">
+                    </a>
+                </ul>
+                
+           </div> 
+        </div>
+        <div class="patrocinio-titulo">Auspiciantes</div>
+        <div class="patrocinadores-auspiciantes auspiciantes-container">
+            <div class="auspiciantes-galeri">
+                <img src="imagenes/Patrocinadores/Patrocinador_1.png" alt="">
+            </div>
+            <div class="auspiciantes-galeri">
+                <img src="imagenes/Patrocinadores/Patrocinador_2.png" alt="">
+            </div>
+            <div class="auspiciantes-galeri">
+                <img src="imagenes/Patrocinadores/Patrocinador_3.png" alt="">
+            </div>
+            <div class="auspiciantes-galeri">
+                <img src="imagenes/Patrocinadores/Patrocinador_4.png" alt="">
+            </div>
+            <div class="auspiciantes-galeri">
+                <img src="imagenes/Patrocinadores/Patrocinador_5.png" alt="">
+            </div>
+            <div class="auspiciantes-galeri">
+                <img src="imagenes/Patrocinadores/Patrocinador_6.jpeg" alt="">
+            </div>
+            <div class="auspiciantes-galeri">
+                <img src="imagenes/Patrocinadores/Patrocinador_7.png" alt="">
+            </div>
+            <div class="auspiciantes-galeri">
+                <img src="imagenes/Patrocinadores/Patrocinador_8.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER-->
+    <!--SCRIPT-->
+    <script src="Js/acciones.js"></script>
+    <script src="Js/formularios.js"></script>
+    <script>
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+   
+
+    <script>
+        window.onload = function(){
+            var contenedor = document.getElementById ('contenedor_carga');
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';}
+    </script>
+    <script>
+        window.addEventListener('load', function(){
+            var img_anteriores = [];
+            var patrocinadores = [];
+            const anteriores = document.getElementById("anteriores");
+            const anterioresmovil = document.getElementById("anteriores-movil");
+
+            img_anteriores[0] = "imagenes/Anteriores/catogames_anteriores_9.jpg";
+            img_anteriores[1] = "imagenes/Anteriores/catogames_anteriores_2.png";
+            img_anteriores[2] = "imagenes/Anteriores/catogames_anteriores_1.png";
+            img_anteriores[3] = "imagenes/Anteriores/catogames_anteriores_3.png";
+            img_anteriores[4] = "imagenes/Anteriores/catogames_anteriores_10.jpg";
+            img_anteriores[5] = "imagenes/Anteriores/catogames_anteriores_4.png";
+            img_anteriores[6] = "imagenes/Anteriores/catogames_anteriores_5.png";
+            img_anteriores[7] = "imagenes/Anteriores/catogames_anteriores_6.png";
+            img_anteriores[8] = "imagenes/Anteriores/catogames_anteriores_7.png";
+            img_anteriores[9] = "imagenes/Anteriores/catogames_anteriores_11.png";
+
+            patrocinadores[0] = document.getElementById("patrocinador_1");
+            patrocinadores[1] = document.getElementById("patrocinador_2");
+            patrocinadores[2] = document.getElementById("patrocinador_3");
+            patrocinadores[3] = document.getElementById("patrocinador_4");
+            patrocinadores[4] = document.getElementById("patrocinador_5");
+            patrocinadores[5] = document.getElementById("patrocinador_6");
+            patrocinadores[6] = document.getElementById("patrocinador_7");
+            patrocinadores[7] = document.getElementById("patrocinador_8");
+            
+
+            var i = 0;
+            var j = 0;
+            var s = 0;
+            const num_patrocinadores = 7;
+            function anteriores_cambio()
+            {
+                anteriores.src = img_anteriores[i];
+                anterioresmovil.src = img_anteriores[i];
+                if(i<10){
+                    i=i+1;
+                }else{
+                    i = 0
+                }
+            }
+
+            function ocultar_patrocinadores()
+            {
+                while(j<=num_patrocinadores ){
+                    patrocinadores[j].style.display = "none";
+                    j=j+1;
+                }
+                if(j>num_patrocinadores){
+                    j=0;
+                }
+                if(s<num_patrocinadores){
+                    patrocinadores[s].style.display = "block";
+                    s=s+1;
+                } else if(s=num_patrocinadores){
+                        patrocinadores[s].style.display = "block";
+                        s=0;
+                    }
+                }
+
+            setInterval(ocultar_patrocinadores, 2000);
+            setInterval(anteriores_cambio, 1500);
+
+          });
+
+    </script>
+    <script>
+        const $days = document.getElementById('days'),
+        $hours = document.getElementById('hours'),
+        $minutes = document.getElementById('minutes'),
+        $seconds = document.getElementById('seconds'),
+        $finalMessage = document.querySelector('.final-sms');
+        
+        //Fecha a futuro
+        const countdownDate = new Date('2 25, 2023 12:30:00').getTime();
+        
+        let interval = setInterval(function(){
+            //Obtener fecha actual y milisegundos
+            const now = new Date().getTime();
+        
+            //Obtener las distancias entre ambas fechas
+            let distance = countdownDate - now;
+        
+            //Calculos a dias-horas-minutos-segundos
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24 )) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60 )) / (1000));
+        
+            //Escribimos resultados
+            $days.innerHTML = days;
+            $hours.innerHTML = hours;
+            $minutes.innerHTML = minutes;
+            $seconds.innerHTML = ('0' + seconds).slice(-2);
+        
+            //Cuando llegue a 0
+            if(distance < 0){
+                clearInterval(interval);
+                $finalMessage.style.transform = 'translateY(0)';
+            }
+        }, 1000);
+     </script>
+    <!--SCRIPT-->
+</body>
+</html>

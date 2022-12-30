@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucha</title>
+    <link rel="stylesheet" href="../estilos/estilos_categorias copy.css">
+    <link rel="stylesheet" href="../estilos/estilos_principal.css">
+    <link rel="shortcut icon" href="../imagenes/Iconos/Icono cato games.ico">
+<body>
+     <!--PRELOADER -->
+     <div id="contenedor_carga">
+        <div id="carga"></div>
+        <p class="cato">CATO GAMES 
+            <br style="text-align: center;"> 2023
+        </p>
+   </div>
+    <!--PRELOADER-->
+    <!--BARRA MENU-->
+    <!--BARRA MENU NORMAL-->
+    <div class="nav-container" id="menu-container-normal">
+        <div class="nav-item nav-item-img">
+            <a href="../">
+                <img src="../imagenes/Iconos/Logo Cato.png" id="logo-normal">
+                <img src="../imagenes/Iconos/Logo Cato Moviles.png" id="logo-recordado">
+            </a>
+        </div>
+        <div class="nav-item nav-item-links" id="nav-item-links">
+            <div class="nav-item-externo">
+                <a href="../">
+                    <p class="nav-item-interno item-interno-hover">CatoGames</p>
+                </a>
+            </div>
+            <div class="nav-item-externo">
+                <a href="Shooter.html">
+                    <p class="nav-item-interno item-interno-hover">Shooter</p>
+                </a>
+            </div>
+            <div class="nav-item-externo nav-item-externo-disable">
+                <p class="nav-item-interno item-interno-hover">Lucha</p>
+            </div>
+            <div class="nav-item-externo">
+                <a href="Movil.html">
+                    <p class="nav-item-interno item-interno-hover">Movil</p>
+                </a>
+            </div>
+            <div class="nav-item-externo">
+                <a href="Estrategia.html">
+                    <p class="nav-item-interno item-interno-hover">Estrategia</p>
+                </a>
+            </div>
+        </div>
+        <div class="">
+            <a href="../">
+                <p class="nav-item-interno-movil">Cato games</p>
+            </a>
+        </div>
+    </div>
+    <div class="nav-btn">
+        <img id="abrir-nav" onclick="abrir_menu()" src="../imagenes/Iconos/menu.png" alt="">
+    </div>
+    <!--BARRA MENU MOVIL-->
+    <div class="nav-container-movil" id="menu-container-movil">
+        <div class="nav-container-movil-todo">
+            <div class="nav-item-img-movil">
+                <a href="https://www.ucacue.edu.ec/" target="_blank">
+                    <img src="../imagenes/Iconos/Logo Cato.png">
+                </a>
+            </div>
+            <div class="item-menu-movil">
+                <a href="../">
+                    <p class="nav-cato">Cato Games</p>
+                </a>
+            </div>
+            <div class="item-menu-movil">
+                <a href="Shooter.html">
+                    <p class="nav-cato">Shooter</p>
+                </a>
+            </div>
+            <div class="item-menu-movil">
+                <a href="Estrategia.html">
+                    <p class="nav-cato">Estrategia</p>
+                </a>
+            </div>
+            <div class="item-menu-movil">
+                <a href="Lucha.html">
+                    <p class="nav-cato">Lucha</p>
+                </a>
+            </div>
+            <div class="item-menu-movil">
+                <a href="Movil.html">
+                    <p class="nav-cato">Movil</p>
+                </a>
+            </div>
+        </div>    
+        <div class="nav-btn-m">
+            <img id="cerrar-nav" onclick="cerrar_menu()" src="../imagenes/Iconos/cancel.png" alt="">
+        </div>
+    </div>
+    <!--BARRA MENU-->
+    <!--CONTENIDO 1-->
+
+    <div class="contenido-container">
+        <div class="contenido-inicio" id="contenido-container">
+            <img src="../imagenes/brawhlalla.png" id="contenido-container-img">
+        </div>
+    </div>
+    <!--CONTENIDO 1-->
+    <!--CONTENIDO 2-->
+    <div class="info-categorias-container">
+        <div class="descripcion-reglas-categorias">
+            <div class="descripcion-categorias">
+                Es un videojuego gratuito de lucha en plataforma desarrollado por Blue Mammoth Games y publicado por Ubisoft. Se basa en una pelea de 4 jugadores, cada uno posee 2 armas que puede alternar. El objetivo del juego es sacar a tu oponente de la plataforma golpeándolo hasta cargar el golpe fuerte.
+            </div>
+            <div class="reglas-normas">
+            <div>
+                <p class="reglas btn-reglas" id="reglas-normas-active" onclick="abrir_reglas_normas()">Reglas</p>
+                <div class="reglas-normas-hover-continer" id="reglas-normas-hover-continer">
+                    <div class="reglas-normas-hover">
+                        <img  onclick="cerrar_reglas_normas()" class="cerrar-reglas-normas" id="cerrar-reglas-normas" src="../imagenes/Iconos/cancel.png" alt="">
+                        <p>Reglas</p>
+                        <br>
+                        <ul>
+                            <li>Las partidas serán en multijugador de 4 jugadores.</li>
+                            <li>Las partidas serán en modo todos contra todos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="reglas btn-reglas" id="reglas-normas-active" onclick="abrir_normas()">Normas</p>
+                <div class="reglas-normas-hover-continer" id="normas-hover-continer">
+                    <div class="reglas-normas-hover">
+                        <img  onclick="cerrar_normas()" class="cerrar-reglas-normas" id="cerrar-reglas-normas" src="../imagenes/Iconos/cancel.png" alt="">
+                        <p>Normas</p>
+                        <ul>
+                            <li>No se permiten actitudes antideportivas.</li>
+                            <li>Cumplir el reglamento del respectivo juego.</li>
+                            <li>Comunicar cualquier duda a su respectivo monitor.</li>
+                            <li>Edad permitida de 16 a 25 años.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="inscripciones">
+            <p class="inscripciones-text" onclick="validar_fecha()">Inscríbete</p>
+            <div id="inscripciones-container">
+                <div class="inscripciones-container-form">
+                    <h1>Formulario de inscripción para shooter</h1>
+                </div>
+            </div>
+            <div class="reglas-normas-hover-continer" id="antes-de-fecha-continer">
+                <div class="inscripciones-no-disponibles">
+                    <img  onclick="cerrar_fehca_antes()" class="cerrar-inscribere" id=" cerrar-inscribere" src="../imagenes/Iconos/cancel.png" alt="">
+                    <p>Lo sentimos, las inscripciones serán desde el día 1 de febrero del 2023 y se cerrarán el 15 del mismo mes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CONTENIDO 2-->
+    <!--FOOTER-->
+    <footer class="footer" id="footer" >
+        <div class="footer-container">
+            <div class="columnas">
+                <ul>
+                    <p>Nuestras redes sociales</p>
+                    <a href="https://www.tiktok.com/@rvv_cato" target="_blank">
+                        <img src="../imagenes/Iconos/tiktok_logo.png" width="60px" style="margin-bottom: 5px;">
+                    </a>
+                    <a href="https://es-la.facebook.com/UCACUEICCIT/" target="_blank">
+                        <img src="../imagenes/Iconos/logo definitivo de face.png" >
+                    </a>
+                </ul>
+                <ul>                        
+                    <p>Correo Electrónico</p> 
+                    <p style="margin-top: 1%;">info_iccit@ucacue.edu.ec</p>
+                </ul>
+                <ul >
+                    <a href="https://es-la.facebook.com/UCACUEICCIT/" target="_blank">
+                        <img src="../imagenes/Iconos/logo unidad academica.png" id="logo-unidad">
+                    </a>
+                </ul>
+                
+           </div> 
+        </div>
+    </footer>
+    <!--FOOTER-->
+    <script>
+        function validar_fecha(){
+            tiempo = new Date();
+            const fecha_de_inscripcion_inicio = new Date('2 1, 2023').getTime();
+            const fecha_de_inscripcion_final = new Date('2 15, 2023 11:00:00').getTime();
+
+            if(tiempo < fecha_de_inscripcion_inicio){
+                document.getElementById("antes-de-fecha-continer").style.display = "block";
+            }
+           if(tiempo > fecha_de_inscripcion_inicio)
+           {
+            if(tiempo < fecha_de_inscripcion_final){
+                location.href='../inscripciones/Lucha.html';
+            }else{
+                document.getElementById("antes-de-fecha-continer").style.display = "block";
+            }
+           }
+        }
+        window.onload = function(){
+            var contenedor = document.getElementById ('contenedor_carga');
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';}
+    </script>
+    <script src="../Js/acciones.js"></script>
+</body>
+
+</html>

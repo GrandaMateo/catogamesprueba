@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripciones - Lucha</title>
+    <link rel="stylesheet" href="../estilos/estilos_incripciones.css">
+    <link rel="shortcut icon" href="../imagenes/Iconos/Icono cato games.ico">
+</head>
+<body>
+    <div id="inscripciones-container">
+        <div class="inscripciones-container-form">
+            <a href="../categorias/Lucha.html"><img src="../imagenes/Iconos/cancel.png" id="cerrar-form-container"></a>
+            <h1 class="inscripciones-form-title-superior">Formulario de inscripción para lucha</h1>
+            <form action="" method="POST" accept-charset="UTF-8" autocomplete="off" name="inscripcion">
+                <div  class="inscripciones-form">
+                    <div class="form-item form-item-doble">
+                        <p class="form-title">Nombres y Apellidos</p>
+                        <input class="form-input" type="text" name="nombres_apellidos">
+                    </div>
+                    <div class="form-item form-item-simple">
+                        <p class="form-title">Cédula</p>
+                        <input class="form-input" type="text" name="cedula" required minlength="10" maxlength="10">
+                    </div>
+                    <div class="form-item form-item-simple">
+                        <p class="form-title">Fecha de nacimiento</p>
+                        <input class="form-input" type="date" name="fecha_nacimiento" required>
+                    </div>
+                    <div class="form-item form-item-simple">
+                        <p class="form-title">Correo electrónico</p>
+                        <input class="form-input" type="email" name="correo" required>
+                    </div>
+                    <div class="form-item form-item-simple">
+                        <p class="form-title">Teléfono</p>
+                        <input class="form-input" type="text" name="telefono" minlength="10" maxlength="10"required>
+                    </div>
+                    <div class="form-item form-item-simple">
+                        <p class="form-title">Ciudad</p>
+                        <input class="form-input" type="text" name="ciudad" required>
+                    </div>
+                    <div class="form-item form-item-simple">
+                        <p class="form-title">Institución</p>
+                        <input class="form-input" type="text" name="institucion" required>
+                        <input type="hidden" id="tiempo" name="inscripcion">
+                    </div>
+                    <div class="form-item form-item-doble">
+                        <p class="form-title">
+                            <input class="form-input-checkbox" id="Acuerdo" type="checkbox"  name="acuerdo" value="Si">
+                            Autorizo el uso de mi voz e imagen (<a href="../Acuerdos/CARTA DE AUTORIZACION MENORES.pdf" target="_blank" class="form-input-checkbox">Menores de edad</a>)(<a href="../Acuerdos/CARTA DE AUTORIZACION MENORES.pdf" target="_blank" class="form-input-checkbox">Mayores de edad</a>)
+                        </p>                        
+                    </div>
+                    <p id="demo"></p>
+                </div>
+                <div class="inscripciones-form-btns">
+                    <div class="form-btns-container">
+                        <button class="form-btns" type="submit">Inscribirme</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyRimGMdrW0PmPkyxwIIiiEL4PcFORggzkv5zrlveYbJ_2RTxyKz1hvAd0TDOqUECXc/exec'
+    const form = document.forms['inscripcion']
+    
+    var isChecked = document.getElementById('Acuerdo').checked;
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      var isChecked = document.getElementById('Acuerdo').checked;
+
+    if(isChecked){
+        alert ("Has aceptado los acuerdos")
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => document.getElementById("demo").innerHTML = "<div class='alert alert-primary' role='alert'><b>Inscrito correctamente – Redirigiendo</b></div>",inscripcion.reset(), alert('Inscrito Correctamente'))
+        setTimeout( function() { window.location.href = "../categorias/Movil.html"; }, 1000 )
+        .catch(error => console.error('Error!', error.message))
+    }else
+    {
+        alert ("No has aceptado los acuerdos, acepta para pod")
+    }
+    })
+    let html = document.getElementById("tiempo");
+    setInterval(function(){
+        tiempo = new Date();
+        html.value = tiempo;
+    },1000);
+</script>
+
+</body>
+</html>
